@@ -1,19 +1,37 @@
-import { Box, Text} from "@chakra-ui/react";
+import { Box, Text, Button, HStack } from "@chakra-ui/react";
 
 export const Header = () => {
   return (
     <Box
-      width="full"
-      paddingY={5}
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      borderBottom={1}
-      borderColor={"#F5F7F9"}
-      bgColor={"white"}
-      boxShadow={"sm"}
+      width="100%"
+      px="24px"
+      py="16px"
+      bgColor="transparent"
     >
-        <Text>Header</Text>
+      <HStack
+        width="100%"
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Text
+          fontSize="20px"
+          fontWeight="600"
+        >
+          LOGO
+        </Text>
+
+        <Button
+          width="101px"
+          height="41px"
+          bgColor="white"
+          color="black"
+          borderRadius="12px"
+          fontSize="14px"
+          fontWeight="500"
+        >
+          Contact
+        </Button>
+      </HStack>
     </Box>
   );
 };
