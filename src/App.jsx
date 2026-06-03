@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { FeatureStrip } from "./components/FeatureStrip";
 import { AboutSection } from "./components/AboutSection";
+import { BenefitsSection } from "./components/BenefitsSection"
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Hero />
       <FeatureStrip/>
       <AboutSection />
+      <BenefitsSection/>
+
     </LandingLayout>
   );
 }
